@@ -18,9 +18,15 @@ public class Main {
         }
     }
     public static void determinationOfDeliveryDays (int distance) {
-        int deliveryTime = 1;
-        return (distance <= 20 ? "Потребуется дней" + deliveryTime : distance <= 60 && deliveryTime >= 20 ? "Потребуется дней" + (deliveryTime + 1) : deliveryTime <= 100 && deliveryTime >= 60 ? "Потребуется дней" + (deliveryTime + 2));
+       int beginning = 20;
+       int step = 40;
+       int numberOfDays = 1;
+       if (distance >= beginning);
+       numberOfDays = (Math.abs((distance-beginning)/step)+2);
+       System.out.println("Для доставки подредуется " + numberOfDays + " дней");
     }
+
+
         public static void main (String[] args) {
         //Задание 1
 whatYear(2020);
